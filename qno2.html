@@ -1,0 +1,43 @@
+<head>
+    <title>Converting age</title>
+</head>
+<body>
+    <script>
+        function daysInMonth (month, year) {
+    return new Date(year, month, 0).getDate();
+}
+        var today = new Date();
+var y = today.getFullYear()
+var m = (today.getMonth()+1)
+var d = today.getDate();
+        let year= prompt("Enter the year you were born");
+        let month= prompt("Enter the month you were born");
+        let day= prompt("Enter the day");
+        if(!year || !month || !day){
+            alert("Please enter a valid year")
+        }
+        else{
+        if(confirm(`Were you born on ${year} year ${month} month and ${day} day?`)){
+            if(m<month){
+                a=month-m
+                b=12-a
+            }
+            else{
+                b=m-month
+                    }
+            if(d<day){
+                z=day-d
+                x=daysInMonth(m,y)-z
+            }
+            else{
+                x=d-day
+            }
+         alert(`You are currently ${y-year} years ${b} months ${x} days old`)   
+        }
+        else{
+             alert("Please reload page")
+        }
+        }
+    </script>
+
+</body>

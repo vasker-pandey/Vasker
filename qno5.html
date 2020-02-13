@@ -1,0 +1,22 @@
+<head>
+    <title>Find largest among three numbers</title>
+</head>
+<body>
+    <script>
+        let a=prompt("Enter the first number:")
+        let b=prompt("Enter the second number:")
+        let c=prompt("Enter the third number:")
+        if(!a && !b && !c){
+            alert("Please enter the number you want to compare")
+        }
+        else if(a>b && a>c){
+            alert(`${a} is the largest integer among the three integers`)
+        }
+        else if(b>a && b>c){
+            alert(`${b} is the largest integer among the three integers`)
+        }
+        else{
+            alert(`${c} is the largest integer among the three integers`)
+        }
+    </script>
+</body>
